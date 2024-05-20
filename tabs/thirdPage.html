@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAN</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body style="background-color: #102c57">
+    <!-- header -->
+    <head style="background-color: #fefaf6">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html"
+            ><h3>🤝DrugAwarenessNavigator</h3></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <!-- PRIVACY -->
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#privacyModal"
+                  >Privacy</a
+                >
+
+                <!-- PRIVACY MODAL -->
+                <div
+                  class="modal fade"
+                  id="privacyModal"
+                  tabindex="-1"
+                  aria-labelledby="privacyModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h2 class="modal-title" id="privacyModalLabel">
+                          Privacy Policy🔒
+                        </h2>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body p-3 p-sm-5">
+                        <div class="privacy-subtitle">
+                          <h4>Your Privacy Matters to Us</h4>
+                          <p>
+                            At DrugAwarenessNavigator, we prioritize the privacy
+                            and security of your personal information. When you
+                            fill out our form, we collect certain data to
+                            analyze and identify factors influencing drug use
+                            frequency. Here’s how we handle your data:
+                          </p>
+                        </div>
+                        <div class="row g-3 py-4">
+                          <div class="col-12 col-sm-6">
+                            <div class="card bg-success-subtle">
+                              <div class="card-body">
+                                <h5>Data Collection:</h5>
+                                <p>
+                                  We collect information you provide through our
+                                  form, including your responses and any
+                                  additional data you choose to share.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="card bg-success-subtle">
+                              <div class="card-body">
+                                <h5>Data Usage:</h5>
+                                <p>
+                                  Your data is used exclusively for the purpose
+                                  of analyzing and identifying factors affecting
+                                  drug use frequency.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="card bg-success-subtle">
+                              <div class="card-body">
+                                <h5>Data Security:</h5>
+                                <p>
+                                  We implement strict security measures to
+                                  protect your data from unauthorized access,
+                                  alteration, disclosure, or destruction.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="card bg-success-subtle">
+                              <div class="card-body">
+                                <h5>Data Sharing:</h5>
+                                <p>
+                                  We do not share, sell, or distribute your
+                                  personal data to third parties without your
+                                  explicit consent.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer justify-content-center bg-info">
+                        <div class="text-information text-center w-75">
+                          <small>
+                            <i>
+                              By using our website, you agree to the terms of
+                              this privacy policy. We are committed to
+                              protecting your privacy and ensuring that your
+                              personal information is handled responsibly.</i
+                            >
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <!-- ABOUT -->
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#aboutModal"
+                  >About</a
+                >
+
+                <!-- ABOUT MODAL -->
+                <div
+                  class="modal fade"
+                  id="aboutModal"
+                  tabindex="-1"
+                  aria-labelledby="aboutModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header bg-info">
+                        <h2 class="modal-title" id="aboutModalLabel">
+                          Aboutℹ️
+                        </h2>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body p-3 p-sm-5">
+                        <div class="about-subtitle">
+                          <h4>Welcome to DrugAwarenessNavigator!</h4>
+                          <p>
+                            At DrugAwarenessNavigator, our mission is to provide
+                            insights and support to individuals seeking to
+                            understand and address the factors influencing their
+                            use of illegal drugs. We believe that knowledge and
+                            self-awareness are powerful tools in making informed
+                            decisions about personal health and well-being.
+                          </p>
+                        </div>
+                        <div class="about-body">
+                          <h4>Who We Are</h4>
+                          <p>
+                            We are a dedicated team of NTC college students
+                            passionate about mental health, behavioral analysis,
+                            and data-driven solutions. Our goal is to help users
+                            gain a deeper understanding of the various factors
+                            that can lead to drug use, whether occasional or
+                            habitual.
+                          </p>
+                        </div>
+                        <div class="about-body">
+                          <h4>What We Do</h4>
+                          <p>
+                            Our website offers a unique platform where users can
+                            fill out a comprehensive form about their lifestyle,
+                            social environment, psychological state, and
+                            personal attitudes. Based on your responses, our
+                            system analyzes the data to identify key factors
+                            influencing your drug use frequency.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <!-- HOW -->
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#howModal"
+                  >How?</a
+                >
+
+                <!-- HOW MODAL -->
+                <div
+                  class="modal fade"
+                  id="howModal"
+                  tabindex="-1"
+                  aria-labelledby="howModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header bg-info">
+                        <h1 class="modal-title fs-5" id="howModalLabel">
+                          How It Works❓
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body p-3 p-sm-5">
+                        <div class="how-subtitle mb-3">
+                          <h4>Understanding the Process</h4>
+                          <p>
+                            At DrugAwarenessNavigator, we aim to provide you
+                            with valuable insights into the factors influencing
+                            your use of illegal drugs. Our process is simple,
+                            secure, and designed to offer you personalized
+                            feedback. Here’s how it works:
+                          </p>
+                        </div>
+                        <div class="how-body">
+                          <div class="step-one mb-4">
+                            <h5>Step 1: Fill Out the Form</h5>
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                <strong class="text-secondary"
+                                  >Comprehensive Questions:</strong
+                                >
+                                Start by completing our detailed form. The
+                                questions cover various aspects of your life,
+                                including your social environment, psychological
+                                state, personal beliefs, and lifestyle.
+                              </li>
+                              <li class="list-group-item">
+                                <strong class="text-secondary"
+                                  >Honest Responses:
+                                </strong>
+                                The accuracy of your analysis depends on how
+                                truthfully you answer the questions. Be as
+                                honest and detailed as possible to ensure the
+                                best results.
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="step-two mb-4">
+                            <h5>Step 2: Data Analysis</h5>
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                <strong class="text-secondary"
+                                  >Advanced Algorithms:
+                                </strong>
+                                Once you submit the form, our system uses
+                                advanced algorithms to analyze your responses.
+                              </li>
+                              <li class="list-group-item">
+                                <strong class="text-secondary"
+                                  >Behavioral Insights:
+                                </strong>
+                                The analysis considers multiple factors that can
+                                influence drug use, such as social influences,
+                                stress levels, accessibility, and personal
+                                attitudes.
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="step-three">
+                            <h5>Step 3: Receive Your Personalized Report</h5>
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                <strong class="text-secondary"
+                                  >Detailed Feedback:
+                                </strong>
+                                After the analysis, you will receive a
+                                comprehensive report that outlines the key
+                                factors affecting your drug use frequency.
+                              </li>
+                              <li class="list-group-item">
+                                <strong class="text-secondary"
+                                  >Actionable Recommendations:
+                                </strong>
+                                The report includes personalized recommendations
+                                to help you address these factors and promote
+                                healthier habits.
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <!-- FAQ -->
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#faqModal"
+                  >FAQ</a
+                >
+
+                <!-- FAQ MODAL -->
+                <div
+                  class="modal fade"
+                  id="faqModal"
+                  tabindex="-1"
+                  aria-labelledby="faqModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header bg-info">
+                        <h1 class="modal-title fs-5" id="faqModalLabel">
+                          Frequently Asked Questions 💭
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body p-3 p-sm-5">
+                        <div class="how-body">
+                          <div class="step-one mb-4">
+                            <h5>How long does the form take to complete?</h5>
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                The form typically takes about 10-15 minutes to
+                                complete, depending on the level of detail in
+                                your responses.
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="step-two mb-4">
+                            <h5>Is my data safe?</h5>
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                Absolutely. We use advanced security measures to
+                                protect your data and ensure your privacy.
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="step-three">
+                            <h5>Can I request my data to be deleted?</h5>
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                Yes, you have the right to request the deletion
+                                of your data at any time. Please refer to our
+                                Privacy Policy for more details.
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </head>
+
+    <!-- main -->
+    <main>
+      <section
+        class="container d-flex justify-content-center align-items-center py-5"
+      >
+        <div class="card w-75">
+          <!-- CARD HEADER -->
+          <div class="card-header" style="background-color: #ffff">
+            <h3>Form</h3>
+          </div>
+          <!-- CARD BODY -->
+          <div class="card-body px-3 px-sm-5" style="background-color: #f6f5f2">
+            <h5 class="card-title">Questions:</h5>
+            <div class="card-text">
+              <form>
+                <!-- 17. QUESTION WORKPLACE SATISFACTION -->
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <div class="form-group">
+                      <label>Do you ever feel satisfied in your work? </label>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="workPlaceSatisfaction"
+                          id="enjoyable"
+                          value="enjoyable"
+                        />
+                        <label class="form-check-label" for="enjoyable">
+                          Yes
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="workPlaceSatisfaction"
+                          id="notEnjoyable"
+                          value="notEnjoyable"
+                        />
+                        <label class="form-check-label" for="notEnjoyable">
+                          No
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="workPlaceSatisfaction"
+                          id="noWork"
+                          value="noWork"
+                        />
+                        <label class="form-check-label" for="noWork">
+                          Not applicable
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 18. QUESTION LAWSUIT CASE -->
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <div class="form-group">
+                      <label>Do you have a lawsuit case? </label>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="suicidalThoughts"
+                          id="wCase"
+                          value="wCase"
+                        />
+                        <label class="form-check-label" for="wCase">
+                          Yes
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="suicidalThoughts"
+                          id="noCase"
+                          value="noCase"
+                        />
+                        <label class="form-check-label" for="noCase">
+                          No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 19. QUESTION LIVING W DRUG USER -->
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <div class="form-group">
+                      <label>Are you living with drug user? </label>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="livingW/DrugUser"
+                          id="wDrugUser"
+                          value="wDrugUser"
+                        />
+                        <label class="form-check-label" for="wDrugUser">
+                          Yes
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="livingW/DrugUser"
+                          id="withoutDrugUser"
+                          value="withoutDrugUser"
+                        />
+                        <label class="form-check-label" for="withoutDrugUser">
+                          No
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="livingW/DrugUser"
+                          id="noIdea"
+                          value="noIdea"
+                        />
+                        <label class="form-check-label" for="noIdea">
+                          Not Sure
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 20. QUESTION SMOKING FREQ -->
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <div class="form-group">
+                      <label>How frequency do you smoke? </label>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="smkFreq"
+                          id="notSmk"
+                          value="notSmk"
+                        />
+                        <label class="form-check-label" for="notSmk">
+                          No, I don't
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="smkFreq"
+                          id="everyDay"
+                          value="everyDay"
+                        />
+                        <label class="form-check-label" for="everyDay">
+                          Yes, Everyday
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="smkFreq"
+                          id="occasionally"
+                          value="occasionally"
+                        />
+                        <label class="form-check-label" for="occasionally">
+                          Yes, Occasionally
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 21. QUESTION TAKEN ANY KIND OF DRUGS -->
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <div class="form-group">
+                      <label>Have you ever taken any kind of drug? </label>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="famDrugUser"
+                          id="noTakingAnyDrugs"
+                          value="noTakingAnyDrugs"
+                        />
+                        <label class="form-check-label" for="noTakingAnyDrugs">
+                          No
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="famDrugUser"
+                          id="yesTakenAnyDrug"
+                          value="yesTakenAnyDrug"
+                        />
+                        <label class="form-check-label" for="yesTakenAnyDrug">
+                          Yes
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 22. QUESTION CLOSED FRIENDS-->
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <div class="form-group">
+                      <label>How many closed friends do you have? </label>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="numFriends"
+                          id="noFriends"
+                          value="noFriends"
+                        />
+                        <label class="form-check-label" for="noFriends">
+                          None
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="numFriends"
+                          id="moreThanFive"
+                          value="moreThanFive"
+                        />
+                        <label class="form-check-label" for="moreThanFive">
+                          More than 5
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="numFriends"
+                          id="lessThanFour"
+                          value="lessThanFour"
+                        />
+                        <label class="form-check-label" for="lessThanFour">
+                          Less than 4
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 23. QUESTION DRUG INFLUENCE-->
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <div class="form-group">
+                      <label
+                        >Is your friends are influencing you to take drugs?
+                      </label>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="widrawalThoughts"
+                          id="noTheyreNot"
+                          value="noTheyreNot"
+                        />
+                        <label class="form-check-label" for="noTheyreNot">
+                          No, They don't
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="widrawalThoughts"
+                          id="theyInflucened"
+                          value="theyInflucened"
+                        />
+                        <label class="form-check-label" for="theyInflucened">
+                          Yes, They often do
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 24. QUESTION TASTE OF DRUGS-->
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <div class="form-group">
+                      <label>Have you ever tried to taste drugs? </label>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="triedDrugs"
+                          id="havenTried"
+                          value="havenTried"
+                        />
+                        <label class="form-check-label" for="havenTried">
+                          Haven't tried
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="triedDrugs"
+                          id="iTried"
+                          value="iTried"
+                        />
+                        <label class="form-check-label" for="iTried">
+                          I tried
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="triedDrugs"
+                          id="forgot"
+                          value="forgot"
+                        />
+                        <label class="form-check-label" for="forgot">
+                          I forgot
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+              <div>
+                <h4>Click Next ↘️</h4>
+              </div>
+            </div>
+          </div>
+          <!-- CARD FOOTER -->
+          <div class="card-footer" style="background-color: #ffff">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-end">
+                <li class="page-item">
+                  <a class="page-link" href="../index.html">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="secondPage.html">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="fourthPage.html">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-light text-center text-lg-start mt-5">
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">About Us</h5>
+            <p>
+              We are dedicated to providing insights and support to help
+              individuals understand the factors influencing drug use. Our goal
+              is to promote healthier lifestyles through informed decisions.
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Quick Links</h5>
+            <ul class="list-unstyled mb-0">
+              <li><a href="#" class="text-dark">About</a></li>
+              <li><a href="#" class="text-dark">Privacy</a></li>
+              <li><a href="#" class="text-dark">How</a></li>
+              <li><a href="#" class="text-dark">FAQ</a></li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Contact Us</h5>
+            <ul class="list-unstyled">
+              <li>123 Hev Avenue, Suite 100<br />Wellness City, HW 12345</li>
+              <li>
+                Email:
+                <a href="mailto:info@yourwebsite.com" class="text-dark"
+                  >info@yourwebsite.com</a
+                >
+              </li>
+              <li>
+                Phone:
+                <a href="tel:+1234567890" class="text-dark">+1 (234) 567-890</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Copyright -->
+      <div class="text-center p-3 bg-secondary text-white">
+        &copy; 2024 Your Website. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>

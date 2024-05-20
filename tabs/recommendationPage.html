@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAN⚕️</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body style="background-color: #102c57">
+    <!-- header -->
+    <head style="background-color: #fefaf6">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html"
+            ><h3>🤝DrugAwarenessNavigator</h3></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <!-- PRIVACY -->
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#privacyModal"
+                  >Privacy</a
+                >
+
+                <!-- PRIVACY MODAL -->
+                <div
+                  class="modal fade"
+                  id="privacyModal"
+                  tabindex="-1"
+                  aria-labelledby="privacyModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h2 class="modal-title" id="privacyModalLabel">
+                          Privacy Policy🔒
+                        </h2>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body p-3 p-sm-5">
+                        <div class="privacy-subtitle">
+                          <h4>Your Privacy Matters to Us</h4>
+                          <p>
+                            At DrugAwarenessNavigator, we prioritize the privacy
+                            and security of your personal information. When you
+                            fill out our form, we collect certain data to
+                            analyze and identify factors influencing drug use
+                            frequency. Here’s how we handle your data:
+                          </p>
+                        </div>
+                        <div class="row g-3 py-4">
+                          <div class="col-12 col-sm-6">
+                            <div class="card bg-success-subtle">
+                              <div class="card-body">
+                                <h5>Data Collection:</h5>
+                                <p>
+                                  We collect information you provide through our
+                                  form, including your responses and any
+                                  additional data you choose to share.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="card bg-success-subtle">
+                              <div class="card-body">
+                                <h5>Data Usage:</h5>
+                                <p>
+                                  Your data is used exclusively for the purpose
+                                  of analyzing and identifying factors affecting
+                                  drug use frequency.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="card bg-success-subtle">
+                              <div class="card-body">
+                                <h5>Data Security:</h5>
+                                <p>
+                                  We implement strict security measures to
+                                  protect your data from unauthorized access,
+                                  alteration, disclosure, or destruction.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="card bg-success-subtle">
+                              <div class="card-body">
+                                <h5>Data Sharing:</h5>
+                                <p>
+                                  We do not share, sell, or distribute your
+                                  personal data to third parties without your
+                                  explicit consent.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer justify-content-center bg-info">
+                        <div class="text-information text-center w-75">
+                          <small>
+                            <i>
+                              By using our website, you agree to the terms of
+                              this privacy policy. We are committed to
+                              protecting your privacy and ensuring that your
+                              personal information is handled responsibly.</i
+                            >
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <!-- ABOUT -->
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#aboutModal"
+                  >About</a
+                >
+
+                <!-- ABOUT MODAL -->
+                <div
+                  class="modal fade"
+                  id="aboutModal"
+                  tabindex="-1"
+                  aria-labelledby="aboutModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header bg-info">
+                        <h2 class="modal-title" id="aboutModalLabel">
+                          Aboutℹ️
+                        </h2>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body p-3 p-sm-5">
+                        <div class="about-subtitle">
+                          <h4>Welcome to DrugAwarenessNavigator!</h4>
+                          <p>
+                            At DrugAwarenessNavigator, our mission is to provide
+                            insights and support to individuals seeking to
+                            understand and address the factors influencing their
+                            use of illegal drugs. We believe that knowledge and
+                            self-awareness are powerful tools in making informed
+                            decisions about personal health and well-being.
+                          </p>
+                        </div>
+                        <div class="about-body">
+                          <h4>Who We Are</h4>
+                          <p>
+                            We are a dedicated team of NTC college students
+                            passionate about mental health, behavioral analysis,
+                            and data-driven solutions. Our goal is to help users
+                            gain a deeper understanding of the various factors
+                            that can lead to drug use, whether occasional or
+                            habitual.
+                          </p>
+                        </div>
+                        <div class="about-body">
+                          <h4>What We Do</h4>
+                          <p>
+                            Our website offers a unique platform where users can
+                            fill out a comprehensive form about their lifestyle,
+                            social environment, psychological state, and
+                            personal attitudes. Based on your responses, our
+                            system analyzes the data to identify key factors
+                            influencing your drug use frequency.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <!-- HOW -->
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#howModal"
+                  >How?</a
+                >
+
+                <!-- HOW MODAL -->
+                <div
+                  class="modal fade"
+                  id="howModal"
+                  tabindex="-1"
+                  aria-labelledby="howModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header bg-info">
+                        <h1 class="modal-title fs-5" id="howModalLabel">
+                          How It Works❓
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body p-3 p-sm-5">
+                        <div class="how-subtitle mb-3">
+                          <h4>Understanding the Process</h4>
+                          <p>
+                            At DrugAwarenessNavigator, we aim to provide you
+                            with valuable insights into the factors influencing
+                            your use of illegal drugs. Our process is simple,
+                            secure, and designed to offer you personalized
+                            feedback. Here’s how it works:
+                          </p>
+                        </div>
+                        <div class="how-body">
+                          <div class="step-one mb-4">
+                            <h5>Step 1: Fill Out the Form</h5>
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                <strong class="text-secondary"
+                                  >Comprehensive Questions:</strong
+                                >
+                                Start by completing our detailed form. The
+                                questions cover various aspects of your life,
+                                including your social environment, psychological
+                                state, personal beliefs, and lifestyle.
+                              </li>
+                              <li class="list-group-item">
+                                <strong class="text-secondary"
+                                  >Honest Responses:
+                                </strong>
+                                The accuracy of your analysis depends on how
+                                truthfully you answer the questions. Be as
+                                honest and detailed as possible to ensure the
+                                best results.
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="step-two mb-4">
+                            <h5>Step 2: Data Analysis</h5>
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                <strong class="text-secondary"
+                                  >Advanced Algorithms:
+                                </strong>
+                                Once you submit the form, our system uses
+                                advanced algorithms to analyze your responses.
+                              </li>
+                              <li class="list-group-item">
+                                <strong class="text-secondary"
+                                  >Behavioral Insights:
+                                </strong>
+                                The analysis considers multiple factors that can
+                                influence drug use, such as social influences,
+                                stress levels, accessibility, and personal
+                                attitudes.
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="step-three">
+                            <h5>Step 3: Receive Your Personalized Report</h5>
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                <strong class="text-secondary"
+                                  >Detailed Feedback:
+                                </strong>
+                                After the analysis, you will receive a
+                                comprehensive report that outlines the key
+                                factors affecting your drug use frequency.
+                              </li>
+                              <li class="list-group-item">
+                                <strong class="text-secondary"
+                                  >Actionable Recommendations:
+                                </strong>
+                                The report includes personalized recommendations
+                                to help you address these factors and promote
+                                healthier habits.
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <!-- FAQ -->
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#faqModal"
+                  >FAQ</a
+                >
+
+                <!-- FAQ MODAL -->
+                <div
+                  class="modal fade"
+                  id="faqModal"
+                  tabindex="-1"
+                  aria-labelledby="faqModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header bg-info">
+                        <h1 class="modal-title fs-5" id="faqModalLabel">
+                          Frequently Asked Questions 💭
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body p-3 p-sm-5">
+                        <div class="how-body">
+                          <div class="step-one mb-4">
+                            <h5>How long does the form take to complete?</h5>
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                The form typically takes about 10-15 minutes to
+                                complete, depending on the level of detail in
+                                your responses.
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="step-two mb-4">
+                            <h5>Is my data safe?</h5>
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                Absolutely. We use advanced security measures to
+                                protect your data and ensure your privacy.
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="step-three">
+                            <h5>Can I request my data to be deleted?</h5>
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                Yes, you have the right to request the deletion
+                                of your data at any time. Please refer to our
+                                Privacy Policy for more details.
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </head>
+
+    <!-- main -->
+    <main>
+      <section class="container my-5">
+        <div class="recom-label border-bottom mb-4 text-light">
+          <h1 class="text-center">Recommendation💡</h1>
+        </div>
+        <div class="row g-3 g-sm-4 mb-5">
+          <div class="col-12 col-sm-4">
+            <div class="card border-0">
+              <div class="card-body">
+                <div class="card-text lead">
+                  <h4 class="pb-2">Strengthen Social Connections🎯</h4>
+                  <p>
+                    Seek out social groups and activities that do not involve
+                    drug use. Building strong, supportive relationships in
+                    drug-free environments can reduce the influence of peer
+                    pressure.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4">
+            <div class="card border-0">
+              <div class="card-body">
+                <div class="card-text lead">
+                  <h4 class="pb-2">Manage Stress and Anxiety🎯</h4>
+                  <p>
+                    Consider adopting healthier coping mechanisms for stress and
+                    anxiety, such as exercise, meditation, or seeking support
+                    from a mental health professional.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4">
+            <div class="card border-0">
+              <div class="card-body">
+                <div class="card-text lead">
+                  <h4 class="pb-2">Educate Yourself on Risks🎯</h4>
+                  <p>
+                    Increase your awareness of the potential health risks and
+                    legal consequences associated with drug use. Understanding
+                    the full scope of risks can help in making more informed
+                    decisions.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4">
+            <div class="card border-0">
+              <div class="card-body">
+                <div class="card-text lead">
+                  <h4 class="pb-2">Seek Professional Help🎯</h4>
+                  <p>
+                    If you feel that drug use is impacting your life negatively,
+                    consider speaking with a counselor or joining a support
+                    group to explore strategies for reducing or eliminating drug
+                    use.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4">
+            <div class="card border-0">
+              <div class="card-body">
+                <div class="card-text lead">
+                  <h4 class="pb-2">
+                    Increase Engagement in Positive Activities🎯
+                  </h4>
+                  <p>
+                    Find and engage in activities that you are passionate about,
+                    which can serve as a constructive outlet for stress and
+                    provide a sense of fulfillment without the need for drug
+                    use.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card w-75 conclusion mx-auto">
+          <div class="card-body">
+            <h2 class="card-title text-center">Conclusion✅</h2>
+            <div class="card-text">
+              <p>
+                Your occasional use of illegal drugs is influenced by a
+                combination of social, psychological, and personal factors. By
+                addressing these areas and seeking healthier alternatives, you
+                can reduce your reliance on drugs and improve your overall
+                well-being.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-light text-center text-lg-start mt-5">
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">About Us</h5>
+            <p>
+              We are dedicated to providing insights and support to help
+              individuals understand the factors influencing drug use. Our goal
+              is to promote healthier lifestyles through informed decisions.
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Quick Links</h5>
+            <ul class="list-unstyled mb-0">
+              <li><a href="#" class="text-dark">About</a></li>
+              <li><a href="#" class="text-dark">Privacy</a></li>
+              <li><a href="#" class="text-dark">How</a></li>
+              <li><a href="#" class="text-dark">FAQ</a></li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Contact Us</h5>
+            <ul class="list-unstyled">
+              <li>123 Hev Avenue, Suite 100<br />Wellness City, HW 12345</li>
+              <li>
+                Email:
+                <a href="mailto:info@yourwebsite.com" class="text-dark"
+                  >info@yourwebsite.com</a
+                >
+              </li>
+              <li>
+                Phone:
+                <a href="tel:+1234567890" class="text-dark">+1 (234) 567-890</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Copyright -->
+      <div class="text-center p-3 bg-secondary text-white">
+        &copy; 2024 Your Website. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
